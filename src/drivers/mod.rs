@@ -1,3 +1,11 @@
+pub mod uart;
+pub mod can;
+pub mod flash;
+
+pub use uart::Uart;
+pub use can::CanDriver;
+pub use flash::FlashDriver;
+
 pub struct CanDriver {
     // CAN controller registers and state
 }
